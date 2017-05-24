@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class UserService {
@@ -39,4 +40,11 @@ public class UserService {
     }
 
 
+    public void addUser(String name, String surName) {
+
+        final Random random = new Random(10000l);
+        final User user = new User(random.nextLong(), name, surName);
+        users.add(user);
+
+    }
 }
