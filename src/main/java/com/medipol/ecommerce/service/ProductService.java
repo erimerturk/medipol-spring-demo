@@ -17,7 +17,7 @@ public class ProductService {
         products.add(new Product(2, "addidas", 300));
     }
 
-    public void add(){
+    public void add(String name, Integer quantity){
         //TODO
     }
 
@@ -25,7 +25,7 @@ public class ProductService {
         //TODO
     }
 
-    public void update(){
+    public void update(Integer id, String name, Integer price){
         //TODO
     }
 
