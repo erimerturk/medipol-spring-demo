@@ -32,4 +32,9 @@ public class ProductService {
     public List<Product> list(){
         return products;
     }
+
+    public Product findBy(int productId) {
+        //TODO
+        return null;
+    }
 }

@@ -13,8 +13,8 @@ public class BasketTest {
     public void shouldAddProductWithOneQuantity() throws Exception {
 
         final Basket basket = new Basket();
-
         final Product product = new Product(1, "nike air", 200);
+
         basket.addItem(new BasketItem(1, product));
 
         assertTrue(basket.getItems().size() == 1);
